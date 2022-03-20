@@ -1,0 +1,38 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+#container {
+  display: grid;
+  grid-gap: 0em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+  padding: 2em;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+#runButton{
+  padding: 4em;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: green;
+}
+
+/* pre {
+    color: 000;
+    background: white;
+    box-shadow: rgb(119 119 119) 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #aaaaaa;
+    font-size: 12px;
+    font-family: 'DejaVu Sans', monospace;
+    line-height: normal;
+    margin: 0 0 0 15px;
+    overflow: auto;
+} */
