@@ -1,0 +1,68 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#raytracer {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers horizontally in the flex container */
+    align-items: center; /* Centers vertically in the flex container */
+    /* text-align: center; Centers text inside the <pre> */
+    width: 100%;
+    min-width: 420px; /* Minimum width */
+    max-width: 90vw; /* Maximum width to maintain some padding on the sides */
+    margin: 20px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+    overflow-x: auto; /* Allows for horizontal scrolling */
+    box-sizing: border-box;
+    white-space: pre-wrap; /* Allows the text to wrap */
+    word-break: break-word; /* Ensures that long words do not cause overflow */
+}
+
+#container {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    margin: 20px 0; /* Vertical margin for some spacing */
+}
+
+.grid-item {
+    padding: 1em; /* Adjust padding as needed */
+    border: 1px solid #000;
+}
+
+#runButton {
+    padding: 1em;
+    border: 1px solid #000;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    margin: 15px 0; /* Vertical margin for some spacing */
+}
+
+#runButton:hover {
+    background-color: darkgreen;
+}
+
+#clearButton {
+  padding: 1em;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  margin: 8px;
+}
